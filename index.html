@@ -3,36 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Calclite</title>
+    <title>Support - CalcLite</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #1d1d1f; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f5f5f7; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1d1d1f; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f7; }
         .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #007AFF; font-size: 28px; margin-bottom: 10px; }
+        .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e5ea; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #007AFF; margin: 0; font-size: 24px; }
+        select { padding: 8px 12px; border-radius: 8px; border: 1px solid #d2d2d7; background-color: #fff; font-size: 14px; cursor: pointer; }
+        .lang-content { display: none; }
+        /* 默认显示英文 */
+        .lang-en { display: block; }
         .contact-btn { display: inline-block; background: #007AFF; color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 20px 0; }
-        .faq-item { border-bottom: 1px solid #d2d2d7; padding: 15px 0; }
-        .medical-disclaimer { font-size: 0.85em; color: #86868b; margin-top: 30px; padding: 15px; background: #fff9e6; border-radius: 8px; }
+        .contact-btn:hover { background: #005bb5; }
+        .faq-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #f2f2f7; }
+        .faq-q { font-weight: bold; color: #1d1d1f; display: block; margin-bottom: 5px; }
+        .medical-disclaimer { margin-top: 30px; padding: 15px; background: #fff9e6; border-left: 4px solid #ffcc00; border-radius: 4px; font-size: 0.9em; color: #665c3b; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Calclite Support</h1>
-        <p>We are here to help. If you have any questions or feedback regarding Calclite, please reach out to us.</p>
-        
-        <a href="mailto:calclitesupport@163.com" class="contact-btn">Email Customer Support</a>
-
-        <h3>Frequently Asked Questions</h3>
-        <div class="faq-item">
-            <strong>Q: How to restore my Lifetime VIP?</strong><br>
-            A: Open Settings in Calclite and tap "Restore Purchase". Ensure you're signed in with the Apple ID used for purchase.
-        </div>
-        <div class="faq-item">
-            <strong>Q: How can I delete my account?</strong><br>
-            A: Go to Settings > Delete Account. This will permanently remove your email and data from our servers.
+        <div class="header">
+            <h1>CalcLite Support</h1>
+            <select id="langSelect" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="zh">中文 (Chinese)</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="de">Deutsch (German)</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="fr">Français (French)</option>
+            </select>
         </div>
 
-        <div class="medical-disclaimer">
-            <strong>Medical Disclaimer:</strong> BMI calculations in Calclite are based on World Health Organization (WHO) standards. This info is for educational use only and not a substitute for professional medical advice.
+        <div class="lang-content lang-en">
+            <p>We are here to help. If you have any questions, feedback, or need technical assistance, please contact us.</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">Email Customer Support</a>
+            
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <span class="faq-q">Q: How do I restore my Lifetime VIP?</span>
+                A: Open the App Settings and tap <strong>"Restore Purchase"</strong>. Ensure you are logged in with the same Apple ID used for the original purchase.
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Q: How do I delete my account?</span>
+                A: Go to <strong>Settings > Delete Account</strong>. This will permanently remove your email identifier and account data from our servers.
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>Medical Disclaimer:</strong> BMI calculations in this app are based on standards from the <strong>World Health Organization (WHO)</strong>. This information is for educational purposes only and is not a substitute for professional medical advice.
+            </div>
+        </div>
+
+        <div class="lang-content lang-zh">
+            <p>如果您在使用过程中遇到任何问题，或有改进建议，请随时联系我们。</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">联系客服邮箱</a>
+            
+            <h3>常见问题 (FAQ)</h3>
+            <div class="faq-item">
+                <span class="faq-q">问：如何恢复我的终身 VIP？</span>
+                答：请进入 App 设置页面，点击<strong>“恢复购买”</strong>。请确保您登录的 Apple ID 与购买时一致。
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">问：如何注销/删除账号？</span>
+                答：请前往<strong>“设置 > 注销账号”</strong>。此操作将从服务器永久删除您的邮箱凭证及所有关联数据。
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>医疗免责声明：</strong> 本应用中的 BMI 计算基于<strong>世界卫生组织 (WHO)</strong> 的标准。该信息仅供参考，不能替代专业的医疗建议。
+            </div>
+        </div>
+
+        <div class="lang-content lang-ja">
+            <p>ご質問やご意見、技術的なサポートが必要な場合は、お気軽にお問い合わせください。</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">サポートへメール送信</a>
+            
+            <h3>よくある質問 (FAQ)</h3>
+            <div class="faq-item">
+                <span class="faq-q">Q: 以前購入したVIPを復元するには？</span>
+                A: 設定画面から<strong>「購入を復元 (Restore Purchase)」</strong>をタップしてください。購入時と同じApple IDでログインしていることを確認してください。
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Q: アカウントを削除するには？</span>
+                A: <strong>「設定 > アカウント削除」</strong>に進んでください。これにより、お客様のメールアドレスとデータがサーバーから完全に削除されます。
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>免責事項：</strong> 本アプリのBMI計算は<strong>世界保健機関 (WHO)</strong> の基準に基づいています。この情報は教育目的のみであり、専門的な医療アドバイスの代わりとなるものではありません。
+            </div>
+        </div>
+
+        <div class="lang-content lang-de">
+            <p>Wir sind hier, um zu helfen. Bei Fragen, Feedback oder technischen Problemen kontaktieren Sie uns bitte.</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">Kundensupport kontaktieren</a>
+            
+            <h3>Häufig gestellte Fragen</h3>
+            <div class="faq-item">
+                <span class="faq-q">F: Wie kann ich meinen Lifetime-VIP wiederherstellen?</span>
+                A: Öffnen Sie die Einstellungen und tippen Sie auf <strong>"Käufe wiederherstellen"</strong>. Stellen Sie sicher, dass Sie mit derselben Apple-ID angemeldet sind.
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">F: Wie lösche ich mein Konto?</span>
+                A: Gehen Sie zu <strong>Einstellungen > Konto löschen</strong>. Dadurch werden Ihre E-Mail und Daten dauerhaft von unseren Servern entfernt.
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>Medizinischer Haftungsausschluss:</strong> Die BMI-Berechnungen basieren auf Standards der <strong>Weltgesundheitsorganisation (WHO)</strong>. Diese Informationen dienen nur Bildungszwecken und ersetzen keinen ärztlichen Rat.
+            </div>
+        </div>
+
+        <div class="lang-content lang-es">
+            <p>Estamos aquí para ayudar. Si tiene preguntas o necesita asistencia técnica, contáctenos.</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">Enviar correo al soporte</a>
+            
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-item">
+                <span class="faq-q">P: ¿Cómo restauro mi VIP de por vida?</span>
+                R: Vaya a Configuración y toque <strong>"Restaurar compras"</strong>. Asegúrese de haber iniciado sesión con el mismo Apple ID utilizado para la compra.
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">P: ¿Cómo elimino mi cuenta?</span>
+                R: Vaya a <strong>Configuración > Eliminar cuenta</strong>. Esto eliminará permanentemente su correo electrónico y datos de nuestros servidores.
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>Aviso Médico:</strong> Los cálculos de IMC se basan en estándares de la <strong>Organización Mundial de la Salud (OMS)</strong>. Esta información es solo para fines educativos y no sustituye el consejo médico profesional.
+            </div>
+        </div>
+
+        <div class="lang-content lang-fr">
+            <p>Nous sommes là pour vous aider. Si vous avez des questions ou besoin d'assistance, contactez-nous.</p>
+            <a href="mailto:calclitesupport@163.com" class="contact-btn">Contacter le support</a>
+            
+            <h3>Foire Aux Questions</h3>
+            <div class="faq-item">
+                <span class="faq-q">Q : Comment restaurer mon VIP à vie ?</span>
+                R : Allez dans les Réglages et appuyez sur <strong>"Restaurer les achats"</strong>. Assurez-vous d'être connecté avec le même identifiant Apple.
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">Q : Comment supprimer mon compte ?</span>
+                R : Allez dans <strong>Réglages > Supprimer le compte</strong>. Cela supprimera définitivement votre e-mail et vos données de nos serveurs.
+            </div>
+            
+            <div class="medical-disclaimer">
+                <strong>Avis Médical :</strong> Les calculs d'IMC sont basés sur les normes de l'<strong>Organisation Mondiale de la Santé (OMS)</strong>. Ces informations sont fournies à titre éducatif et ne remplacent pas un avis médical professionnel.
+            </div>
         </div>
     </div>
+
+    <script>
+        function switchLanguage(lang) {
+            var contents = document.getElementsByClassName('lang-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var selected = document.getElementsByClassName('lang-' + lang);
+            if(selected.length > 0) {
+                selected[0].style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
