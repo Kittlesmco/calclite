@@ -7,48 +7,137 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1d1d1f; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f7; }
         .container { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; }
-        h1 { color: #1d1d1f; border-bottom: 2px solid #007AFF; padding-bottom: 10px; font-size: 28px; }
-        h2 { color: #007AFF; margin-top: 30px; font-size: 20px; }
-        h3 { margin-top: 20px; color: #1d1d1f; font-size: 18px; }
-        p, li { color: #48484a; font-size: 16px; }
-        .footer { margin-top: 50px; font-size: 14px; color: #86868b; text-align: center; border-top: 1px solid #d2d2d7; padding-top: 20px; }
+        .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 2px solid #007AFF; padding-bottom: 15px; margin-bottom: 20px; }
+        h1 { color: #1d1d1f; margin: 0; font-size: 24px; }
+        select { padding: 8px; border-radius: 8px; border: 1px solid #d2d2d7; background: #fff; cursor: pointer; }
+        h2 { color: #007AFF; margin-top: 30px; font-size: 18px; }
+        h3 { margin-top: 20px; color: #1d1d1f; font-size: 16px; font-weight: bold; }
+        p, li { color: #48484a; font-size: 15px; margin-bottom: 10px; }
+        .lang-content { display: none; }
+        .lang-en { display: block; } /* Default */
+        .footer { margin-top: 50px; font-size: 13px; color: #86868b; text-align: center; border-top: 1px solid #d2d2d7; padding-top: 20px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> January 28, 2026</p>
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <select id="langSelect" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
 
-        <h2>1. Information Collection and Use</h2>
-        
-        <h3>Camera Permission and Image Information</h3>
-        <p>When you use the "OCR Smart Recognition" feature, we require access to your Camera or Photo Album. Images are uploaded to a cloud OCR interface for <strong>instant recognition only</strong>. We do NOT permanently store your private receipt images on our servers. After recognition, data is saved only in your device's local database.</p>
+        <div class="lang-content lang-en">
+            <p><strong>Effective Date:</strong> February 12, 2026</p>
+            <h2>1. Information Collection</h2>
+            <h3>Camera & OCR</h3>
+            <p>We access your camera solely for instant OCR recognition. Images are processed locally or temporarily and are NOT permanently stored on our servers.</p>
+            <h3>Account Info</h3>
+            <p>We collect your Email only to sync VIP status. We DO NOT sync or store your personal ledger data.</p>
+            <h3>Local Storage</h3>
+            <p>All financial data is stored entirely on your device's local database.</p>
+            <h2>2. Account Deletion</h2>
+            <p>You can delete your account via <strong>Settings > Delete Account</strong>. This permanently removes your email and data from our servers.</p>
+            <h2>3. Contact</h2>
+            <p>Email: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
-        <h3>Account Information</h3>
-        <p>We collect your <strong>Email Address</strong> as a unique identifier. This is used solely for user authentication and to sync your VIP subscription status. We do NOT sync or store your ledger data on our servers.</p>
+        <div class="lang-content lang-zh">
+            <p><strong>生效日期：</strong> 2026年2月12日</p>
+            <h2>1. 信息收集</h2>
+            <h3>相机与 OCR</h3>
+            <p>我们要申请相机权限仅用于 OCR 即时识别。图片仅在本地处理或临时传输，不会永久存储在我们的服务器上。</p>
+            <h3>账号信息</h3>
+            <p>我们仅收集您的邮箱用于同步 VIP 状态。我们不会同步或存储您的记账数据。</p>
+            <h3>本地存储</h3>
+            <p>所有财务数据完全存储在您设备的本地数据库中。</p>
+            <h2>2. 账号注销</h2>
+            <p>您可以通过<strong>“设置 > 注销账号”</strong>来删除账户。这将从服务器永久清除您的邮箱和数据。</p>
+            <h2>3. 联系我们</h2>
+            <p>邮箱：<a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
-        <h3>Ledger Data</h3>
-        <p>All financial entries, including income, expenses, and notes, are stored <strong>entirely on your device's local database</strong>. We cannot view, export, analyze, or back up your personal financial information.</p>
+        <div class="lang-content lang-ja">
+            <p><strong>発効日：</strong> 2026年2月12日</p>
+            <h2>1. 情報の収集</h2>
+            <h3>カメラとOCR</h3>
+            <p>OCR即時認識のためにのみカメラにアクセスします。画像はサーバーに永続的に保存されることはありません。</p>
+            <h3>アカウント情報</h3>
+            <p>VIPステータスを同期するためにメールアドレスのみを収集します。家計簿データは同期・保存しません。</p>
+            <h3>ローカル保存</h3>
+            <p>すべての財務データは、端末のローカルデータベースにのみ保存されます。</p>
+            <h2>2. アカウント削除</h2>
+            <p><strong>「設定 > アカウント削除」</strong>からアカウントを削除できます。これにより、サーバーからデータが完全に削除されます。</p>
+            <h2>3. お問い合わせ</h2>
+            <p>メール：<a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
-        <h2>2. Data Storage and Security</h2>
-        <p>Business data generated by the software is stored locally on your mobile terminal. Local data is retained as long as you do not delete or uninstall the app. Once uninstalled, the data cannot be recovered by us.</p>
+        <div class="lang-content lang-de">
+            <p><strong>Datum des Inkrafttretens:</strong> 12. Februar 2026</p>
+            <h2>1. Datenerfassung</h2>
+            <h3>Kamera & OCR</h3>
+            <p>Wir nutzen die Kamera nur für die OCR-Erkennung. Bilder werden nicht dauerhaft auf unseren Servern gespeichert.</p>
+            <h3>Kontoinformationen</h3>
+            <p>Wir erfassen Ihre E-Mail nur zur Synchronisierung des VIP-Status. Ihre Finanzdaten werden nicht synchronisiert.</p>
+            <h3>Lokale Speicherung</h3>
+            <p>Alle Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert.</p>
+            <h2>2. Konto löschen</h2>
+            <p>Sie können Ihr Konto über <strong>Einstellungen > Konto löschen</strong> entfernen. Ihre Daten werden dauerhaft gelöscht.</p>
+            <h2>3. Kontakt</h2>
+            <p>E-Mail: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
-        <h2>3. Account Deletion</h2>
-        <p>In compliance with Apple's guidelines, users can initiate <strong>Account Deletion</strong> within the app via <strong>Settings > Delete Account</strong>. Upon deletion, your cloud-based account identifiers (email and VIP status) will be permanently removed from our servers.</p>
+        <div class="lang-content lang-es">
+            <p><strong>Fecha de vigencia:</strong> 12 de febrero de 2026</p>
+            <h2>1. Recopilación de información</h2>
+            <h3>Cámara y OCR</h3>
+            <p>Accedemos a su cámara solo para el reconocimiento OCR. Las imágenes NO se almacenan permanentemente en nuestros servidores.</p>
+            <h3>Información de la cuenta</h3>
+            <p>Solo recopilamos su correo electrónico para sincronizar el estado VIP. NO sincronizamos sus datos financieros.</p>
+            <h3>Almacenamiento local</h3>
+            <p>Todos los datos se almacenan completamente en la base de datos local de su dispositivo.</p>
+            <h2>2. Eliminar cuenta</h2>
+            <p>Puede eliminar su cuenta en <strong>Configuración > Eliminar cuenta</strong>. Esto borrará permanentemente sus datos.</p>
+            <h2>3. Contacto</h2>
+            <p>Correo: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
-        <h2>4. Third-Party Services</h2>
-        <ul>
-            <li><strong>Apple IAP:</strong> Used to handle your membership subscription and payment requests.</li>
-            <li><strong>UniApp SDK:</strong> Provides basic application framework services.</li>
-        </ul>
-
-        <h2>5. Contact Us</h2>
-        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        <div class="lang-content lang-fr">
+            <p><strong>Date d'entrée en vigueur :</strong> 12 février 2026</p>
+            <h2>1. Collecte d'informations</h2>
+            <h3>Caméra et OCR</h3>
+            <p>Nous accédons à votre caméra uniquement pour la reconnaissance OCR. Les images ne sont PAS stockées sur nos serveurs.</p>
+            <h3>Informations du compte</h3>
+            <p>Nous collectons votre e-mail uniquement pour le statut VIP. Nous ne stockons pas vos données comptables.</p>
+            <h3>Stockage local</h3>
+            <p>Toutes les données sont stockées entièrement sur la base de données locale de votre appareil.</p>
+            <h2>2. Suppression du compte</h2>
+            <p>Vous pouvez supprimer votre compte via <strong>Réglages > Supprimer le compte</strong>. Cela effacera définitivement vos données.</p>
+            <h2>3. Contact</h2>
+            <p>E-mail : <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
 
         <div class="footer">
             &copy; 2026 CalcLite Team. All rights reserved.
         </div>
     </div>
+
+    <script>
+        function switchLanguage(lang) {
+            var contents = document.getElementsByClassName('lang-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var selected = document.getElementsByClassName('lang-' + lang);
+            if(selected.length > 0) {
+                selected[0].style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
