@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Agreement - CalcLite</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1d1d1f; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f7; }
+        .container { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; }
+        .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 2px solid #007AFF; padding-bottom: 15px; margin-bottom: 20px; }
+        h1 { color: #1d1d1f; margin: 0; font-size: 24px; }
+        select { padding: 8px; border-radius: 8px; border: 1px solid #d2d2d7; background: #fff; cursor: pointer; font-size: 14px; }
+        h2 { color: #007AFF; margin-top: 30px; font-size: 18px; border-bottom: 1px solid #f0f0f0; padding-bottom: 5px; }
+        h3 { margin-top: 20px; color: #1d1d1f; font-size: 16px; font-weight: bold; }
+        p, li { color: #48484a; font-size: 15px; margin-bottom: 10px; }
+        .lang-content { display: none; }
+        .lang-en { display: block; } /* Default */
+        .footer { margin-top: 50px; font-size: 13px; color: #86868b; text-align: center; border-top: 1px solid #d2d2d7; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>User Agreement</h1>
+            <select id="langSelect" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="zh">中文 (Chinese)</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="de">Deutsch (German)</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="fr">Français (French)</option>
+            </select>
+        </div>
+
+        <div class="lang-content lang-en">
+            <p><strong>Effective Date:</strong> February 12, 2026</p>
+            <p>Welcome to CalcLite (hereinafter referred to as "the Software"). This Software is developed and operated by <strong>Yuzhao He</strong> (hereinafter referred to as "the Developer"). Please read this "User Agreement" carefully before using the Software.</p>
+            <p>By downloading, installing, or using the Software, you agree that you have fully understood and accepted all terms of this Agreement.</p>
+
+            <h2>1. Service Content</h2>
+            <p>1.1 The Software is a utility application integrating scientific calculation, ledger management, OCR recognition, and unit conversion.</p>
+            <p>1.2 The Software offers standard features and a "Paid Subscription" version for premium features.</p>
+
+            <h2>2. User Conduct</h2>
+            <p>2.1 You guarantee that the personal information (such as registered email) provided is true and accurate.</p>
+            <p>2.2 You shall not use the Software for any illegal activities.</p>
+            <p>2.3 Reverse engineering or cracking VIP features is strictly prohibited.</p>
+
+            <h2>3. Data Safety and Liability Limitation</h2>
+            <p><strong>3.1 Local Storage Policy:</strong> Your core data, such as ledger records and OCR images, are stored <strong>ONLY</strong> on your current mobile device. The Developer does not backup your data on cloud servers.</p>
+            <p><strong>3.2 Data Loss Disclaimer:</strong> If you uninstall the Software, change your device, or log out, all your ledger data will be <strong>permanently lost</strong>. The Developer assumes no responsibility for such data loss.</p>
+            <p><strong>3.3 OCR Recognition:</strong> The Developer is not responsible for the absolute accuracy of OCR results due to external factors like image clarity.</p>
+
+            <h2>4. Value-Added Services</h2>
+            <p>4.1 You can unlock premium features through paid subscriptions (VIP membership).</p>
+            <p>4.2 Once subscribed, fees paid are non-refundable unless required by law.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>Email: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="lang-content lang-zh">
+            <p><strong>生效日期：</strong> 2026年2月12日</p>
+            <p>欢迎您使用 CalcLite（以下简称“本软件”）。本软件由 <strong>何宇昭</strong>（以下简称“开发者”）开发并运营。请您在注册、登录或使用本软件之前，仔细阅读本《用户协议》（以下简称“本协议”）的所有内容。</p>
+            <p>特别提示：您一旦下载、安装、注册或使用本软件，即视为您已完全理解并接受本协议的全部条款。</p>
+
+            <h2>一、 服务内容</h2>
+            <p>1.1 本软件是一款集科学计算、记账管理、OCR识别及单位换算于一体的工具类应用。</p>
+            <p>1.2 本软件目前提供基础功能使用及“付费订阅”高级版本。用户可根据需求选择使用。</p>
+
+            <h2>二、 用户行为规范</h2>
+            <p>2.1 您保证您使用本软件时提供的个人信息（如注册邮箱）真实、准确。</p>
+            <p>2.2 您不得利用本软件从事任何违法违规活动，包括但不限于洗钱、非法集资、制作或传播虚假财务凭证等。</p>
+            <p>2.3 您不得对本软件进行反向工程、反向汇编或破解会员功能。</p>
+
+            <h2>三、 数据安全与责任限制（重要条款）</h2>
+            <p><strong>3.1 本地存储原则：</strong>您知悉并同意，本软件采用本地化数据存储策略。您的记账数据、OCR图片记录等核心数据仅存储于您当前的移动设备中，开发者不会在云端服务器备份您的记账数据。</p>
+            <p><strong>3.2 数据丢失免责：</strong>由于数据存储在本地，若您卸载本软件、更换手机设备、手机丢失或损坏，或者退出登录，您的所有记账数据将无法恢复且永久丢失。开发者对此产生的数据丢失后果不承担任何责任。建议您定期自行手动备份重要数据。</p>
+            <p><strong>3.3 OCR识别：</strong>本软件提供的OCR（文字识别）功能准确率受限于图片清晰度、光线及算法模型，开发者不对识别结果的绝对准确性负责，请您以原始票据为准。</p>
+
+            <h2>四、 增值服务</h2>
+            <p>4.1 您可以通过付费订阅（VIP会员）解锁高级功能。订阅费用及服务期限以支付页面显示为准。</p>
+            <p>4.2 一旦订阅成功，除法律明确规定外，已支付的费用将不予退还。</p>
+
+            <h2>五、 联系我们</h2>
+            <p>邮箱：<a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="lang-content lang-ja">
+            <p><strong>発効日：</strong> 2026年2月12日</p>
+            <p>CalcLite（以下「本ソフトウェア」）をご利用いただきありがとうございます。本ソフトウェアは <strong>Yuzhao He</strong>（以下「開発者」）によって開発・運営されています。ご利用前に本「ユーザー利用規約」をよくお読みください。</p>
+
+            <h2>1. サービス内容</h2>
+            <p>1.1 本ソフトウェアは、科学計算、家計簿管理、OCR認識、単位変換を統合したユーティリティアプリです。</p>
+            <p>1.2 標準機能に加え、「有料サブスクリプション」によるプレミアム機能を提供しています。</p>
+
+            <h2>2. ユーザーの行動規範</h2>
+            <p>2.1 提供される個人情報（登録メールアドレスなど）が真実かつ正確であることを保証するものとします。</p>
+            <p>2.2 本ソフトウェアを違法行為に使用してはなりません。</p>
+            <p>2.3 リバースエンジニアリングやVIP機能のクラッキングは厳禁です。</p>
+
+            <h2>3. データセキュリティと責任の制限</h2>
+            <p><strong>3.1 ローカル保存ポリシー：</strong>家計簿記録やOCR画像などのコアデータは、現在使用中のモバイル端末に<strong>のみ</strong>保存されます。開発者はクラウドサーバーにバックアップを行いません。</p>
+            <p><strong>3.2 データ損失の免責：</strong>アプリのアンインストール、端末の変更、またはログアウトを行うと、すべての家計簿データは<strong>永久に失われます</strong>。開発者はそのようなデータ損失に対して一切の責任を負いません。</p>
+            <p><strong>3.3 OCR認識：</strong>画像の鮮明さなどの外的要因によるOCR結果の完全な正確性について、開発者は責任を負いません。</p>
+
+            <h2>4. 付加価値サービス</h2>
+            <p>4.1 有料サブスクリプション（VIP会員）を通じてプレミアム機能を解除できます。</p>
+            <p>4.2 一度支払われた料金は、法律で定められている場合を除き、返金されません。</p>
+
+            <h2>5. お問い合わせ</h2>
+            <p>メール：<a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="lang-content lang-de">
+            <p><strong>Datum des Inkrafttretens:</strong> 12. Februar 2026</p>
+            <p>Willkommen bei CalcLite (im Folgenden "die Software"). Diese Software wird von <strong>Yuzhao He</strong> (im Folgenden "der Entwickler") entwickelt und betrieben. Bitte lesen Sie diese "Nutzungsbedingungen" sorgfältig durch.</p>
+
+            <h2>1. Leistungsinhalt</h2>
+            <p>1.1 Die Software ist eine Utility-Anwendung, die wissenschaftliche Berechnungen, Haushaltsbuchführung, OCR-Erkennung und Einheitenumrechnung integriert.</p>
+            <p>1.2 Die Software bietet Standardfunktionen sowie eine "Kostenpflichtige Version" für Premium-Funktionen.</p>
+
+            <h2>2. Benutzerverhalten</h2>
+            <p>2.1 Sie garantieren, dass die bereitgestellten persönlichen Daten (z. B. registrierte E-Mail) wahr und korrekt sind.</p>
+            <p>2.2 Sie dürfen die Software nicht für illegale Aktivitäten nutzen.</p>
+            <p>2.3 Reverse Engineering oder das Knacken von VIP-Funktionen ist strengstens untersagt.</p>
+
+            <h2>3. Datensicherheit und Haftungsbeschränkung</h2>
+            <p><strong>3.1 Lokale Speicherrichtlinie:</strong> Ihre Kerndaten, wie Buchhaltungsunterlagen und OCR-Bilder, werden <strong>NUR</strong> auf Ihrem aktuellen Mobilgerät gespeichert. Der Entwickler erstellt kein Backup auf Cloud-Servern.</p>
+            <p><strong>3.2 Haftungsausschluss bei Datenverlust:</strong> Wenn Sie die Software deinstallieren, das Gerät wechseln oder sich ausloggen, gehen alle Ihre Daten <strong>dauerhaft verloren</strong>. Der Entwickler übernimmt keine Verantwortung für solchen Datenverlust.</p>
+            <p><strong>3.3 OCR-Erkennung:</strong> Der Entwickler haftet nicht für die absolute Genauigkeit der OCR-Ergebnisse.</p>
+
+            <h2>4. Mehrwertdienste</h2>
+            <p>4.1 Sie können Premium-Funktionen durch ein kostenpflichtiges Abonnement (VIP-Mitgliedschaft) freischalten.</p>
+            <p>4.2 Einmal gezahlte Gebühren sind nicht erstattungsfähig, sofern gesetzlich nichts anderes vorgeschrieben ist.</p>
+
+            <h2>5. Kontakt</h2>
+            <p>E-Mail: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="lang-content lang-es">
+            <p><strong>Fecha de vigencia:</strong> 12 de febrero de 2026</p>
+            <p>Bienvenido a CalcLite (en adelante "el Software"). Este software es desarrollado y operado por <strong>Yuzhao He</strong> (en adelante "el Desarrollador"). Por favor, lea este "Acuerdo de Usuario" cuidadosamente.</p>
+
+            <h2>1. Contenido del Servicio</h2>
+            <p>1.1 El Software es una aplicación de utilidad que integra cálculo científico, gestión de libros contables, reconocimiento OCR y conversión de unidades.</p>
+            <p>1.2 El Software ofrece funciones estándar y una versión de "Suscripción Pagada" para funciones premium.</p>
+
+            <h2>2. Conducta del Usuario</h2>
+            <p>2.1 Usted garantiza que la información personal proporcionada (como el correo electrónico registrado) es verdadera y precisa.</p>
+            <p>2.2 No utilizará el Software para ninguna actividad ilegal.</p>
+            <p>2.3 La ingeniería inversa o el craqueo de funciones VIP están estrictamente prohibidos.</p>
+
+            <h2>3. Seguridad de Datos y Limitación de Responsabilidad</h2>
+            <p><strong>3.1 Política de Almacenamiento Local:</strong> Sus datos principales, como registros contables e imágenes OCR, se almacenan <strong>SOLO</strong> en su dispositivo móvil actual. El Desarrollador no realiza copias de seguridad en la nube.</p>
+            <p><strong>3.2 Descargo de Responsabilidad por Pérdida de Datos:</strong> Si desinstala el Software, cambia de dispositivo o cierra sesión, todos sus datos se <strong>perderán permanentemente</strong>. El Desarrollador no asume ninguna responsabilidad por dicha pérdida.</p>
+            <p><strong>3.3 Reconocimiento OCR:</strong> El Desarrollador no es responsable de la precisión absoluta de los resultados OCR.</p>
+
+            <h2>4. Servicios de Valor Agregado</h2>
+            <p>4.1 Puede desbloquear funciones premium a través de una suscripción paga (Membresía VIP).</p>
+            <p>4.2 Una vez suscrito, las tarifas pagadas no son reembolsables a menos que la ley exija lo contrario.</p>
+
+            <h2>5. Contacto</h2>
+            <p>Correo: <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="lang-content lang-fr">
+            <p><strong>Date d'entrée en vigueur :</strong> 12 février 2026</p>
+            <p>Bienvenue sur CalcLite (ci-après dénommé "le Logiciel"). Ce logiciel est développé et exploité par <strong>Yuzhao He</strong> (ci-après dénommé "le Développeur"). Veuillez lire attentivement cet "Accord Utilisateur".</p>
+
+            <h2>1. Contenu du Service</h2>
+            <p>1.1 Le Logiciel est une application utilitaire intégrant le calcul scientifique, la gestion de livres de comptes, la reconnaissance OCR et la conversion d'unités.</p>
+            <p>1.2 Le Logiciel offre des fonctionnalités standard et une version "Abonnement Payant" pour les fonctionnalités premium.</p>
+
+            <h2>2. Conduite de l'Utilisateur</h2>
+            <p>2.1 Vous garantissez que les informations personnelles fournies (telles que l'e-mail enregistré) sont vraies et exactes.</p>
+            <p>2.2 Vous ne devez pas utiliser le Logiciel pour des activités illégales.</p>
+            <p>2.3 L'ingénierie inverse ou le piratage des fonctionnalités VIP sont strictement interdits.</p>
+
+            <h2>3. Sécurité des Données et Limitation de Responsabilité</h2>
+            <p><strong>3.1 Politique de Stockage Local :</strong> Vos données principales, telles que les enregistrements comptables et les images OCR, sont stockées <strong>UNIQUEMENT</strong> sur votre appareil mobile actuel. Le Développeur ne sauvegarde pas vos données sur des serveurs cloud.</p>
+            <p><strong>3.2 Avis de Non-responsabilité en cas de Perte de Données :</strong> Si vous désinstallez le Logiciel, changez d'appareil ou vous déconnectez, toutes vos données seront <strong>définitivement perdues</strong>. Le Développeur n'assume aucune responsabilité pour une telle perte de données.</p>
+            <p><strong>3.3 Reconnaissance OCR :</strong> Le Développeur n'est pas responsable de l'exactitude absolue des résultats OCR.</p>
+
+            <h2>4. Services à Valeur Ajoutée</h2>
+            <p>4.1 Vous pouvez débloquer des fonctionnalités premium via un abonnement payant (Membre VIP).</p>
+            <p>4.2 Une fois souscrit, les frais payés ne sont pas remboursables sauf si la loi l'exige.</p>
+
+            <h2>5. Contact</h2>
+            <p>E-mail : <a href="mailto:calclitesupport@163.com">calclitesupport@163.com</a></p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 CalcLite Team. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            var contents = document.getElementsByClassName('lang-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var selected = document.getElementsByClassName('lang-' + lang);
+            if(selected.length > 0) {
+                selected[0].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
