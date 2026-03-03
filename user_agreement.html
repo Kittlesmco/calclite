@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Agreement - CalcLite</title>
+    <title id="tabTitle">User Agreement - CalcLite</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1d1d1f; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f7; }
         .container { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; }
@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>User Agreement</h1>
+            <h1 id="pageTitle">User Agreement</h1>
             <select id="langSelect" onchange="switchLanguage(this.value)">
                 <option value="en">English</option>
                 <option value="zh">中文 (Chinese)</option>
@@ -197,14 +197,33 @@
 
     <script>
         function switchLanguage(lang) {
+            // 1. 隐藏所有语言的内容块
             var contents = document.getElementsByClassName('lang-content');
             for (var i = 0; i < contents.length; i++) {
                 contents[i].style.display = 'none';
             }
+            
+            // 2. 显示选中的语言块
             var selected = document.getElementsByClassName('lang-' + lang);
             if(selected.length > 0) {
                 selected[0].style.display = 'block';
             }
+
+            // 3. 动态更新标题的翻译字典
+            var titleMap = {
+                'en': 'User Agreement',
+                'zh': '用户协议',
+                'ja': 'ユーザー利用規約',
+                'de': 'Nutzungsbedingungen',
+                'es': 'Acuerdo de Usuario',
+                'fr': 'Accord Utilisateur'
+            };
+
+            // 4. 更新网页内的大标题 <h1>
+            document.getElementById('pageTitle').innerText = titleMap[lang];
+            
+            // 5. 更新浏览器标签页的小标题 <title>
+            document.getElementById('tabTitle').innerText = titleMap[lang] + ' - CalcLite';
         }
     </script>
 </body>
