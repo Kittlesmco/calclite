@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6B24QXMVZW.com.kittlesmco.calclite",
+        "paths": [
+          "/calclite/*",
+          "/apple-app-site-association"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "6B24QXMVZW.com.kittlesmco.calclite"
+    ]
+  }
+}
